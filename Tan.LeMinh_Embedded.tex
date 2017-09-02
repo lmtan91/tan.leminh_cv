@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Senior}\\\textbf{Software Engineer},
+        \textbf{Embedded Linux}\\\textbf{Programming},
+        \textbf{OOP}\\\textbf{Design Pattern},
+        \textbf{Software}\\\textbf{Design},
+        \textbf{Linux}\\\textbf{Integration},
+        \textbf{FreeRTOS}\\\textbf{~~MCU~~},
+        \textbf{Debugging}\\\textbf{Static Analysis}
+    }
+}
+
+% Programming skill bars
+\programming{{C $\textbullet$ C++ / 4}, {Java $\textbullet$ \large \LaTeX / 3.5}, {bash $\textbullet$  Python / 2}}
+
+% Projects text
+\OS{{Fedora $\textbullet$ Ubuntu $\textbullet$ CentOS / 4}}
+\IDE{{Eclipse $\textbullet$ QtCreator $\textbullet$ / 4}}
+\Debugging{{gdb debugging / 4}}
+%        \textbf{ZCam} - A streaming module will be integrated into the vacuum cleaner robot to enable the surveillance \\
+%        \textbf{Set-top box software} - Maintain and develop the set-top box software as embedded Linux systems
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Tan. Le Minh} % Your name
+\cvjobtitle{ Senior Software Engineer } % Job
+% title/career
+
+\cvlinkedin{in/tan-le-1b41b567}
+\cvgithub{lmtan91}
+\cvnumberphone{(+84) 908 245458} % Phone number
+\cvsite{lmtan91.github.io} % Personal website
+\cvmail{lmtan91@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2009 - 2013}
+		{}
+        {B.A.Sc., Electronics and Telecommunication \textnormal{(GPA: 7.9)}}
+        {\href{http://www.hcmus.edu.vn}{University of Science, Vietnam National University}}
+        {}
+        %{}
+        {\begin{itemize}
+        \item Computer Structure, Microcontroller and Lab
+        \item Data structure and Algorithms, Computer Interfacing and DAQ
+        \item OOP, Mobile Device Application Programming
+        \item Embedded Systems, Matlab and DSP Lab
+        \end{itemize}}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+		{Nov 2015 -}
+		{Present}
+		{Senior Software Engineer - Product Development}
+	    {Robert Bosch Engineering and Business Solutions}
+	    {}
+	    {\begin{itemize}
+	    \item Project that developed the streaming system that mounted on the vacuum cleaning robot as
+	    surveillance with motion detection.
+	    \item Study customer’s requirement and implement new specification then do the POC in evaluation kit.
+	    \item Research how to bring up i.MX6 custom board running Linux and first time bring up the
+	    Linux board successfully.
+	    \item Working closely with hardware team while bringup and testing hardware.
+	    \item Able to understand schematic and using Oscilloscope to measure the signal.
+	    \item System integration on Yocto and customize for the specific project.
+	    \item Customize the rootfs, device tree, Linux kernel and u-boot.
+	    \item Design and implement the BIST(Built-in Self Test) component that executes the hardware
+	    diagnostic when bootup.
+	    \item Do the FOSS (Free and Open Source Software) license checking for the product go to the
+	    market.
+	    \item Responsible for designing and implementing the streaming application based on Gstreamer
+	    platform and working closely with Wowza streaming team to integrate with Wowza service.
+	    \item Responsible for setting up the PC-Lint (Commercial Static Analysis Tool) on the GNU project and fix the error/warning/info reported by PC-Lint.
+	    \end{itemize}}
+    \\
+    
+	\twentyitem
+    	{Sep 2016 -}
+		{Nov 2016}
+        {Senior Software Engineer - COC HMI}
+        {{Robert Bosch Engineering and Business Solutions}}
+        {}
+        {\begin{itemize}
+        \item Project that supported the German Bosch to integrate the Bosch protocol into the i.MX6
+        platform.
+        \item Worked as the system integration engineer based on \textit{Yocto} project.
+        \item Integrated the packages support the web development such as: AngularJS, html5,...
+        \item Designed and implemented the C++ application(\textit{OOP}) as the json-rpc websocket server based
+        on the \href{https://github.com/cinemast/libjson-rpc-cpp}{libjson-rpc-cpp} that will receive the json data from the front end (Ex: increase the oval cooking temperature to 40◦ )
+        \item Applied \textit{design pattern} in software design.
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{Sep 2015 -}
+		{Nov 2015}
+        {Embedded Software Engineer}
+        {{Robert Bosch Engineering and Business Solutions}}
+        {}
+        {
+        {\begin{itemize}
+        \item Worked onsite in India to support the lazer distance measuring project.
+        \item Setup the eclipse debugging for the project and modified the Makefile to support gdb
+        debugging.
+        \item Researched open source static analyzer tools: cppcheck, clang,... and apply to the project.
+        \item Report the \textit{FOSS} checking in Yocto for the project.
+        \item Measure the memory footprint in the system using Python.
+	    \end{itemize}}
+        }
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\newpage
+\makeprofile
+\section{Experience}
+\begin{twenty}
+	\twentyitem
+	{Sep 2013 -}
+	{Sep 2015}
+	{Embedded Software Engineer}
+	{\href{http://www.globalcybersoft.com/en}{Global Cybersoft Vietnam}}
+	{}
+	{
+		{\begin{itemize}
+				\item Maintained and developed the set-top box software for DIRECTV(AT\&T).
+				\item Studied and researched the embedded Linux architecture.
+				\item Had the chance to study really the perfect embedded Linux product.
+				\item Understood actual design concepts: design for test, design for debugging.
+				\item Understood and design the software architecture from component design, class diagram, sequence diagram.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{Jun 2012 -}
+	{Aug 2012}
+	{Internship}
+	{{Renesas Design Vietnam}}
+	{}
+	{
+		\begin{itemize}
+			\item One of 16 students won the technical exam and interviews of the company to get the internship position at the company.
+			\item Studied the 8-bit MCU designed by Renesas, compiler, IDE and hard debugging.
+			\item Was responsible for all lab testing routines involving all peripherals in the specific MCU.
+			\item Designed and implemented the digital watch project with Lunar calendar feature.
+			\item Besides that, improved the soft skills such as: presentation, team work, English.
+		\end{itemize}
+	}
+	    \\   
+
+\end{twenty}
+
+\section{Home Projects}
+\begin{twenty}
+	\twentyitem
+	{2016}
+	{}
+	{Porting Clutter project on Beaglebone Black}
+	{\href{https://blogs.gnome.org/clutter/}{Clutter Project}}
+	{}
+	{
+		{\begin{itemize}
+		\item Repository: \url{https://github.com/lmtan91/meta-lmtan91/tree/master/clutter}
+		\item Using Yocto to port Clutter into Beaglebone Black in case of creating nice GUI.
+		\end{itemize}}
+	}
+	\\
+	\twentyitem
+	{2016}
+	{}
+	{Porting LWIP and FreeRTOS into STM32F4 Discovery kit}
+	{\href{https://github.com/lmtan91/STM32\_ETH\_LWIP}{STM32\_ETH\_LWIP}}
+	{}
+	{
+		{\begin{itemize}
+		\item Repository: \url{https://github.com/lmtan91/STM32\_ETH\_LWIP}
+		\item Porting to use GNU GCC compiler, OpenOCD for debugging, Eclipse as IDE for free without using Commercial Compiler and IDE.
+		\item Research FreeRTOS and LWIP by implementing some applications as web server.
+		\end{itemize}}
+	}
+%\\
+\end{twenty}
+
+\section{Scholarship}
+\begin{twenty}
+	\twentyitem
+	{2012}
+	{}
+	{Sunflower Mission 2012 Engineering \& Technology Scholarship for Excellence}
+	{\href{https://www.esilicon.com/company/careers/scholarships-in-vietnam}{Sunflower Mission}}
+	{}
+	
+\end{twenty}
+\end{document} 
