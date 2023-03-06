@@ -284,22 +284,24 @@
 	}
 
 	\ifthenelse{\isempty{#5}}{}{
-		\vspace{9pt}
+		\vspace{0pt}
 		{#5}
 	}
 
 	\ifthenelse{\isempty{#6}}{}{
-		\vspace{9pt}
-		\cvtext{\textbf{Technologies include:}}\\
+		\vspace{0pt}
+		% \cvtext{\textbf{Technologies include:}}\\
+		\cvtext{\textbf{Technologies include:}}\
 		{#6}
 	}
 
-	\ifthenelse{\isempty{#7}}{}{
-		\vspace{9pt}
-		\cvtext{\textbf{Achievements include:}}\\
-		{#7}
-	}
-	\vspace{14pt}
+	% \ifthenelse{\isempty{#7}}{}{
+	% 	\vspace{9pt}
+	% 	\cvtext{\textbf{Achievements include:}}\\
+	% 	{#7}
+	% }
+	% \vspace{14pt}
+	\vspace{0pt}
 }
 
 %----------------------------------------------------------------------------------------
@@ -410,14 +412,14 @@
 %---------------------------------------------------------------------------------------
 %	CERTIFICATION
 %----------------------------------------------------------------------------------------
-\newpage
-\cvsection{CERTIFICATIONS}
+% \newpage
+% \cvsection{CERTIFICATIONS}
 
-\cvmetaevent
-{Online Classes}
-{}
-{}
-{It is important for me to stay up to date with the newest topics in the field of IT. I also keep myself up to date with online classes.}
+% \cvmetaevent
+% {Online Classes}
+% {}
+% {}
+% {It is important for me to stay up to date with the newest topics in the field of IT. I also keep myself up to date with online classes.}
 
 \vfill
 % \cvqrcode{0.7}
@@ -444,7 +446,7 @@
 %---------------------------------------------------------------------------------------
 %	PROFILE
 %----------------------------------------------------------------------------------------
-\vfill\null
+% \vfill\null
 \cvsection{PROFILE}
 
 \cvtext{Senior Software Engineer, have a strong background of low-level pro-
@@ -454,14 +456,13 @@ with end device specifications.\\
 
 Have a background of the classic AUTOSAR as well as adaptive AUTOSAR.\\
 
-I am keen to participate in the development of a long term project.\\
-
+I am keen to participate in the development of a long term project.\
 }
 
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
-\vfill\null
+% \vfill\null
 \cvsection{WORK EXPERIENCE}
 
 \cvevent
@@ -482,18 +483,15 @@ I am keen to participate in the development of a long term project.\\
 		\item Design and implement the stack that fullfill the requirement of ISO 14229 UDS.
 	}}
 	{\cvlist {
-		\item C/C++
-		\item Linux
-		\item Yocto
-		\item Bash/Python scripting for integration.
-		\item Security(selinux, secure boot)
+		\item C/C++, Bash/Python
+		\item Security(selinux, secure boot), Yocto
 	}}
 	{\cvlist{
 		\item Fully integrate the whole project for all car lines.
 		\item The car will go to the market by end of this year.
 	}}
 
-\vfill\null
+% \vfill\null
 \cvevent
 	{May 19 - Dec 19}
 	{Senior Software Engineer}
@@ -513,7 +511,7 @@ I am keen to participate in the development of a long term project.\\
 		\item The Central gateway is integrated in all car lines.
 	}}
 
-\vfill\null
+% \vfill\null
 \cvevent
 	{Mar 17 - May 19}
 	{Senior Software Engineer}
@@ -528,19 +526,15 @@ I am keen to participate in the development of a long term project.\\
 		\item Support EU/Russia certification on regulatory eCall.
 	}}
 	{\cvlist {
-		\item Yocto
-		\item Python for process the Audio profile.
-		\item C/C++
-		\item Bash scripting
-		\item Gerrit/Git
-		\item Agile Scrum
+		\item C/C++, Python, Bash scripting
+		\item Gerrit/Git, Yocto
 	}}
 	{\cvlist{
 		\item The product got the certificate to sell in EU/Russia.
 		\item The product being integrated in both Nissan and Renault.
 	}}
 
-\vfill\null
+% \vfill\null
 \cvevent
 	{Sep 15 - Mar 17}
 	{Senior Software Engineer}
@@ -555,17 +549,15 @@ I am keen to participate in the development of a long term project.\\
 		\item Porting the Wifi and Camera OV5640 driver into i.MX6 platform.
 	}}
 	{\cvlist {
-		\item Gstreamer
-		\item C/C++ for software component
-		\item Linux
-		\item Git/gerrit for CI/CD
-		\item Yocto/Python for integration
+		\item 
+		\item C/C++, Yocto/Python
+		\item Git/gerrit, Gstreamer
 	}}
 	{\cvlist{
 		\item The vacuum cleaner is sold with the camera module integrated.
 	}}
 
-\vfill\null
+% \vfill\null
 \cvevent
 	{Sep 13 - Sep 15}
 	{Software engineer}
